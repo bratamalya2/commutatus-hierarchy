@@ -43,7 +43,12 @@ function Employee({
             type={type}
           />
         </span>
-        <span onClick={deleteItem}>
+        <span
+          onClick={(e) => {
+            e.stopPropagation();
+            deleteItem();
+          }}
+        >
           <DeleteButton />
         </span>
       </div>
@@ -72,7 +77,12 @@ function Employee({
             type={type}
           />
         </span>
-        <span onClick={deleteItem}>
+        <span
+          onClick={(e) => {
+            e.stopPropagation();
+            deleteItem();
+          }}
+        >
           <DeleteButton />
         </span>
       </div>

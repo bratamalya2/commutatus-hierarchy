@@ -20,6 +20,8 @@ function Department({ departmentHeads, employees }) {
     );
   }, [deptHeadId, departmentHeads, employees]);
 
+  if (!availableDepartmentHead) return null;
+
   return (
     <Fragment>
       <div className="dept-head">

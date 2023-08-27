@@ -47,7 +47,8 @@ function App() {
   };
 
   const addNewTeam = (team) => {
-    if (teams.filter((t) => t.name === team.name).length > 0) return false;
+    if (teams && teams.filter((t) => t.name === team.name).length > 0)
+      return false;
     addNewField(team, teams, setTeams);
     return true;
   };
