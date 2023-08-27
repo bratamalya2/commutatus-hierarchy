@@ -1,0 +1,20 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.employee-container {
+    padding: 10px;
+    width: max-content;
+    border: 1px solid rgb(185, 15, 15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.team-name-error-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
